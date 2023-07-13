@@ -36,13 +36,13 @@ columbia-blue: #BBCCD3ff;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
 
     transition: width 0.6s, height 0.6s;
     transition-timing-function: ease;
-
+    transform: translate(-50%, -50%);
  }
 
  section#login > div#imagem {
@@ -59,3 +59,95 @@ columbia-blue: #BBCCD3ff;
     padding: 10px;
 
  }
+
+ div#formulario > h1{
+   text-align: center;
+   margin-bottom: 10px;
+
+ }
+
+ div#formulario > p{
+   font-size: 0.8em;
+ }
+
+ .campo{
+   background-color: #4288B2ff;
+   width: 100%;
+   display: block;
+   height: 40px;
+   border: 2px solid  #4288B2ff;
+   border-radius: 8px;
+   margin: 5px 0px;
+ }
+
+ div.campo > label {
+      display: none;
+ }
+
+ div.campo > span{
+   color: white;
+   /* background-color: black; */
+   font-size: 2em;
+   width: 40px;
+   padding: 5px;
+
+ }
+
+ div.campo > input{
+   background-color: #9BB4BFff;
+   font-size: 1em;
+   width: calc(100% - 45px);
+   height: 100%;
+   
+   border: 0px;
+   border-radius: 2px 8px 8px 2px;
+   transform: translate(-2px, -12px);
+ }
+
+   div.campo > input:focus-within{
+      background-color: white;
+      border: none
+
+   }
+  
+
+
+ form > input[type=submit]{
+   display: block;
+   font-size: 1em;
+   width: 100%;
+   height: 40px;
+   background-color: #9BB4BFff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   margin-top: 8px;
+   cursor: pointer;
+ }
+
+ form > input[type=submit]:hover{
+      background-color: #67A2C7ff;
+ }
+
+ form > a.botao{
+   display: block;
+   text-align: center;
+   font-size: 1em;
+  
+   width: 100%;
+   height: 40px;
+   padding: 5px;
+   margin-top: 6px;
+   background-color: rgb(141, 189, 219) ;
+   color: black;
+   border: 1px thin #4288B2ff;
+   border-radius: 5px;
+   text-decoration: none;
+ }
+
+ form > a.botao:hover{
+   background-color: white;
+   border: 1px solid #4288B2ff;
+
+ }
+
